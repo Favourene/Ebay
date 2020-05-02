@@ -1,0 +1,720 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.a{
+    background-image: url(img/3.png);
+    background-size: cover;
+    height: 100vh;
+}
+nav{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 99;
+    background-color: none ;
+}
+nav .logo{
+    flex: 1;
+    margin-left: 10px;
+}
+.logo img{
+    width: 90px;
+}
+nav .input{
+    margin-left: -200px;
+}
+.input input{
+    color: white;
+    background: none;
+    padding: 5px;
+    border-style: none;
+    margin-right: 30px;
+    border-bottom: 1px solid grey;
+}
+
+nav ul{
+    margin-left: 0px;
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+}
+.laps select{
+    background: none;
+    color: white;
+    margin-right: 30px;
+    border-style: none;
+}
+.laps option{
+    color: black;
+}
+a{
+    margin-right: 30px;
+    text-decoration: none;
+    padding-right: 20px;
+    color: white;
+}
+a:hover{
+    border-bottom: 1px solid lime;
+}
+.fa-search{
+    color: rgb(248, 245, 245);
+    margin-left: -50px;
+    margin-right: 30px;
+}
+
+nav .menu{
+    font-size: 2.5em;
+    display: none;
+}
+
+/*------SHRINKS THE NAV BAR FOR SMALLER SCREENS-------*/
+@media (max-width:1000px){
+    nav ul{
+        position: fixed;
+        top:100px;
+        right: -100%;
+        background: rgba(10, 10, 10, 0.705);
+        height: calc(100vh - 100px);
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        transition: right 0.5s linear;
+    }
+    nav select{
+        margin-bottom: 30px;
+    }
+    a{
+        padding-bottom: 30px;
+    }
+    .laps{
+        display: flex;
+        flex-direction: column;
+    }
+    nav .menu{
+        display: block;
+        width: 50px;
+        padding: 10px;
+        margin-top: 5px;
+        text-align: center;
+        background: white;
+        border-radius: 50%;
+        margin-right: 20px;
+    }
+    .menu div{
+        height: 5px;
+        background-color: rgb(8, 8, 8);
+        margin: 3px 0px;
+        margin-left: 13px;
+        transition: .3s;
+    }
+    .menu:hover div{
+        width: 20px;
+    }
+    .one{
+        width: 20px;
+    }
+    .two{
+        width: 20px;
+    }
+    .three{
+        width: 20px;
+    }
+    #chk1:checked ~ ul{
+        right: 0;
+    }
+    nav .input{
+        margin-left: 0;
+    }
+    .input input{
+        width: 80%;
+    }
+
+}
+@media (max-width:500px){
+    nav .logo{
+        margin-left: 10px;
+    }
+    .logo h1{
+        font-size: 1.5em;
+    }
+    nav ul{
+        width: 100%;
+    }
+    #contact .content{
+        padding: 20px;
+    }
+}
+input[type="checkbox"]{
+    display: none;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+@media screen and (max-width: 320px){
+    .menu div{
+        margin-left: 7px;
+    }
+}
+
+.cent{
+    color: white;
+    text-align: center;
+    padding-top: 20%;
+}
+.cent h1{
+    margin-left: 18%;
+    width: 60%;
+    font-size: 50px;
+}
+.cent button{
+    color: white;
+    background: none;
+    padding: 10px 50px;
+    margin-top: 40px;
+}
+button:hover{
+    background: rgba(214, 106, 106, 0.507);
+}
+.b{
+    margin-top: 150px;
+}
+.hi{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.b h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+.b h5{
+    text-decoration: underline;
+    color: black;
+}
+.swiper-container {
+      width: 100%;
+      height: 400px;
+    }
+    .swiper-slide {
+        display: flex;
+        flex-wrap: wrap;
+      text-align: center;
+      font-size: 18px;
+      background: white;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    .imgcon{
+        background: rgba(231, 225, 225, 0.589);
+        width: 100%;
+        height: 300px;
+    }
+    .textcon{
+        width: 100%;
+        margin-top: 20px;
+        text-align: left;
+        margin-left: 0px;
+    }
+    .textcon h1{
+        font-size: 17px;
+        margin-left: 0;
+    }
+    .textcon p{
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    .swiper-slide #ip1{
+        margin-top: 40px;
+        width: 200px;
+    }
+    element.style{
+        width: 100%;
+    }
+    .swiper-slide:active{
+        width: 100%;
+    }
+    #ip{
+        margin-top: 40px;
+        width: 400px;
+    }
+    #ip2{
+        margin-top: 40px;
+        width: 300px;
+    }
+.ccla{
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+.up, .down{
+    padding: 0 200px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+.ccla a{
+    margin-right: 5px;
+    padding-right: 0;
+}
+.a1{
+    color: rgb(218, 5, 5);
+}
+.a2{
+    color: rgb(10, 10, 206);
+}
+.a3{
+    color: rgb(218, 218, 7);
+}
+.a4{
+    color: green;
+}
+.a5{
+    color: black;
+}
+.c{
+    background:rgba(231, 225, 225, 0.589);
+    padding: 40px;
+}
+.all{
+    display: flex;
+    margin-left:10%;
+}
+.textbox{
+    padding: 50px;
+    width: 30%;
+    background: white;
+}
+.textbox h2{
+    font-size: 40px;
+}
+.textbox p{
+    margin-top: 20px;
+    font-size: 17px;
+}
+.textbox button{
+    margin-top: 20px;
+    margin-left: 20%;
+    padding: 10px 70px;
+    background: none;
+    border: 1px solid grey;
+}
+.textbox button:hover{
+   background: rgb(189, 93, 93);
+   color: white;
+}
+.imgbox{
+    width: 70%;
+    overflow: hidden;
+}
+.imgbox img{
+    width: 500px;
+    height: 400px;
+}
+.imgbox img:hover{
+    transition: all 1s ease;
+    transform: scale(1.3);
+}
+.all2{
+    margin-top: 200px;
+    margin-left: 50px;
+    margin-bottom: 150px;
+}
+.all2 h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.all3{
+    display: flex;
+    flex-wrap: wrap;
+}
+.ji{
+    overflow: hidden;
+}
+.all3 div{  
+    margin-right: 10px;
+
+}
+.all2 img{
+    width: 500px;
+}
+.all2 img:hover{
+    transition: all 1s ease;
+    transform: scale(1.3);
+}
+.all4{
+    text-align: center;
+    background: rgb(1, 1, 8);
+    color: white;
+}
+.all5{
+    padding-top: 100px;
+}
+.all5 p{
+    margin-bottom: 20px;
+    color: rgba(128, 128, 128, 0.527);
+}
+.all5 h1{
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+.all5 span{
+    color: rgb(16, 184, 16);
+}
+.all5 button{
+    margin-bottom: 50px;
+    margin-top: 20px;
+    padding: 10px 70px;
+    color: white;
+    background: none;
+    border: 1px solid grey;
+}
+.all5 button:hover{
+    background: white;
+    color: rgb(16, 184, 16);
+ }
+ .e{
+     margin-top: 200px;
+ }
+ .e h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+ .e h5{
+    text-decoration: underline;
+    color: black;
+}
+ .e .swiper-container {
+     margin-left: 20px;
+     overflow: hidden;
+    width: 100%;
+    height: 400px;
+  }
+  .swiper-slide {
+      display: flex;
+      flex-wrap: wrap;
+    text-align: center;
+    font-size: 18px;
+    background: white;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .imgcon2{
+      background: white;
+      width: 100%;
+      height: 300px;
+  }
+  .textcon2{
+      width: 100%;
+      margin-top: 20px;
+      text-align: left;
+      margin-left: 0px;
+  }
+  .textcon2 h2{
+      text-transform: uppercase;
+      margin-top: -20px;
+      font-size: 13px;
+      color: rgba(194, 188, 188, 0.774);
+
+  }
+  .swiper-slide:active{
+      width: 100%;
+  }
+ #dai1{
+     width: 100%;
+     height: 300px;
+ }
+ .e span{
+     font-size: 14px;
+     padding-top: -30px;
+ }
+ .hi2{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+ }
+ #ki{
+     display: flex;
+ }
+.urf{
+    display: flex;
+    justify-content: space-between;
+}
+.urf h1{
+    font-size: 18px;
+    margin-left: 0px;
+}
+.urf p{
+    font-size: 23px;
+}
+.loop{
+    margin-bottom: 150px;
+}
+.f{
+    background: rgba(231, 225, 225, 0.589);
+    color: black;
+}
+.uls{
+    padding: 50px 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.uls ul{
+    margin-left: 40px;
+    width: 20%;
+    margin-bottom: 70px;
+}
+.uls ul h1{
+    margin-bottom: 30px;
+}
+.uls ul li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.uls ul li a{
+    font-size: 14px;
+    color: black;
+}
+.f .all{
+    display: flex;
+    margin-left:10%;
+    padding-bottom: 60px;
+}
+.f .textbox{
+    padding: 50px;
+    width: 30%;
+    background: white;
+}
+.f .textbox h2{
+    font-size: 40px;
+}
+.f .textbox p{
+    margin-top: 20px;
+    font-size: 17px;
+}
+.f .textbox button{
+    margin-top: 20px;
+    margin-left: 20%;
+    padding: 10px 70px;
+    background: none;
+    border: 1px solid grey;
+}
+.f .textbox button:hover{
+   background: rgb(189, 93, 93);
+   color: white;
+}
+.f .imgbox{
+    width: 35%;
+    overflow: hidden;
+}
+.f .imgbox img{
+    width: 400px;
+    height: 400px;
+}
+.f .imgbox img:hover{
+    transition: all 1s ease;
+    transform: scale(1.3);
+}
+.g{
+    background: rgb(1, 1, 8);
+    padding: 40px;
+}
+.bh{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+}
+.n1{
+    width: 40%;
+}
+.n1 h1{
+    color: white;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.n1 button{
+    text-transform: uppercase;
+    background: none;
+    color: white;
+    padding: 10px 70px;
+    margin-right: 25px;
+    margin-bottom: 20px;
+}
+.n1 button:hover{
+    background: rgb(189, 93, 93);
+ }
+.n1 select{
+    margin-top: 20px;
+    background: none;
+    color: white;
+    border-style: none;
+    width: 200px;
+}
+.n1 option{
+    color: black;
+}
+.n2{
+    display: flex;
+}
+.n2 h1{
+    color: white;
+    margin-bottom: 15px;
+}
+.n2 li{
+    margin-bottom: 10px;
+}
+.sel{
+    display: flex;
+    flex-direction: column;
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+}
+.foot img{
+    width: 90px;
+}
+.fab{
+    margin-right: 10px;
+    margin-top: 40px;
+    color: white;
+}
+
+@media screen and (max-width: 600px){
+    .cent h1{
+        margin-top: 80px;
+        width: 100%;
+        margin-left: unset;
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .swiper-slide{
+        width: 100% !important;
+    }
+    .up, .down{
+        padding: 10px;
+        font-size: 20px;
+    }
+    .imgbox{
+        width: 90%;
+    }
+    .imgbox img{
+        width: 100%;
+        height: unset;
+    }
+    .textbox{
+        width: 61%;
+    }
+    .textbox h2{
+        font-size: 25px;
+    }
+    .textbox button{
+        margin-left: 0;
+    }
+    .c{
+        padding: 10px;
+        padding-top: 40px;
+    }
+    .all{
+        flex-wrap: wrap;
+    }
+    .all2{
+        margin-left: 10px;
+    }
+    .all2 img{
+        width: 100%;
+    }
+    .all3 div{
+        margin-bottom: 20px;
+    }
+    .all5 h1{
+        font-size: 30px;
+    }
+    .e .swiper-container{
+        width: 90%;
+    }
+    .uls{
+        padding: 30px 10px;
+    }
+    .uls ul{
+        width: 30%;
+    }
+    .f .imgbox{
+        width: 90%;
+    }
+    .f .imgbox img{
+        width: 100%;
+        height: unset;
+    }
+    .f .textbox{
+        width: 61%;
+    }
+    .f .textbox h2{
+        font-size: 25px;
+    }
+    .f .textbox button{
+        margin-left: 0;
+    }
+    .g{
+        padding: 10px;
+    }
+    .n1{
+        text-align: center;
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .n1 h1{
+        font-size: 30px;
+    }
+    .sel{
+        flex-direction: unset;
+        justify-content: space-evenly;
+    }
+    .n1 select{
+    width: 150px;
+    }
+    .n2{
+        flex-direction: column;
+    }
+    .n2 ul{
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 320px){
+    .textbox{
+        width: 53%;
+    }
+}
