@@ -1,0 +1,491 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 99;
+    background-color: none ;
+}
+nav .logo{
+    flex: 1;
+    margin-left: 10px;
+}
+.logo img{
+    width: 90px;
+}
+nav .input{
+    margin-left: -200px;
+}
+.input input{
+    color: black;
+    background: none;
+    padding: 5px;
+    border-style: none;
+    margin-right: 30px;
+    border-bottom: 1px solid grey;
+}
+
+nav ul{
+    margin-left: 0px;
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+}
+.laps select{
+    background: none;
+    color: black;
+    margin-right: 30px;
+    border-style: none;
+}
+.laps option{
+    color: black;
+}
+ .laps a{
+    margin-right: 30px;
+    text-decoration: none;
+    padding-right: 20px;
+    color: black;
+}
+a:hover{
+    border-bottom: 1px solid lime;
+}
+.fa-search{
+    color: black;
+    margin-left: -50px;
+    margin-right: 30px;
+}
+
+nav .menu{
+    font-size: 2.5em;
+    display: none;
+}
+
+/*------SHRINKS THE NAV BAR FOR SMALLER SCREENS-------*/
+@media (max-width:1000px){
+    nav ul{
+        position: fixed;
+        top:100px;
+        right: -100%;
+        background: rgba(10, 10, 10, 0.705);
+        height: calc(100vh - 100px);
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        transition: right 0.5s linear;
+    }
+    .laps a{
+        color: white;
+    }
+    .laps select{
+        color: white;
+    }
+    nav select{
+        margin-bottom: 30px;
+    }
+    a{
+        padding-bottom: 30px;
+    }
+    .laps{
+        display: flex;
+        flex-direction: column;
+    }
+    nav .menu{
+        display: block;
+        width: 50px;
+        padding: 10px;
+        margin-top: 5px;
+        text-align: center;
+        background: white;
+        border-radius: 50%;
+        margin-right: 20px;
+    }
+    .menu div{
+        height: 5px;
+        background-color: rgb(8, 8, 8);
+        margin: 3px 0px;
+        margin-left: 13px;
+        transition: .3s;
+    }
+    .menu:hover div{
+        width: 20px;
+    }
+    .one{
+        width: 20px;
+    }
+    .two{
+        width: 20px;
+    }
+    .three{
+        width: 20px;
+    }
+    #chk1:checked ~ ul{
+        right: 0;
+    }
+    nav .input{
+        margin-left: 0;
+    }
+    .input input{
+        width: 80%;
+    }
+
+}
+@media (max-width:500px){
+    nav .logo{
+        margin-left: 10px;
+    }
+    .logo h1{
+        font-size: 1.5em;
+    }
+    nav ul{
+        width: 100%;
+    }
+    #contact .content{
+        padding: 20px;
+    }
+}
+input[type="checkbox"]{
+    display: none;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+@media screen and (max-width: 320px){
+    .menu div{
+        margin-left: 7px;
+    }
+}
+
+section{
+    padding-top: 30px;
+}
+
+.sel{
+    margin-top: 50px;
+    float: right;
+    display: flex;
+}
+select{
+    background: none;
+    border-style: none;
+}
+.fa-th{
+    margin-left: 30px;
+    margin-right: 10px;
+}
+#lup{
+    margin-left: -40px;
+    background: none;
+    border-style: none;
+    width: 50px;
+}
+.sidebar{
+    width: 300px;
+    height: 100%;
+    background: none;
+    padding: 30px 0px;
+    position: absolute;
+  }
+  .sidebar h2{
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .sidebar ul li{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(211, 202, 202, 0.788);
+    border-top: 1px solid rgba(211, 202, 202, 0.719);
+  }    
+  #dif{
+    border-top: none;
+  }
+span{
+    color: rgb(194, 191, 191);
+}
+  .sidebar ul li a{
+    color: black;
+    text-decoration: none;
+    display: block;
+  }
+  .sidebar ul li:hover{
+    background-color: #594f8d;
+  }
+  .sidebar ul li:hover a{
+    color: #fff;
+  }
+  .fa-plus{
+      margin-left: 146px;
+  }
+  .menu2{
+    font-size: 2.5em;
+    display: none;
+}
+
+
+    .sidebar{
+        margin-top: 50px;
+    }
+   .sidebar ul{
+        position: absolute;
+        top:100px;
+        left: -100%;
+        background: rgba(10, 10, 10, 0.705);
+        height: 100%;
+        width: 100%;
+        transition: left 0.5s linear;
+    }
+    @media screen and (max-width:600px){
+        .sidebar ul {
+            height: 150%;
+        }
+    }
+    .sidebar ul h2{
+        color: white;
+    }
+    .sidebar ul li a{
+        color: white;
+    }
+    .menu2{
+        display: block;
+        width: 50px;
+        padding: 10px;
+        margin-top: 5px;
+        text-align: center;
+        background: white;
+    }
+    .menu2 div{
+        height: 5px;
+        background-color: rgb(43, 42, 42);
+        margin: 3px 0px;
+        margin-left: 13px;
+        transition: .3s;
+    }
+    .menu2:hover div{
+        width: 30px;
+    }
+    .one2{
+        width: 30px;
+    }
+    .two2{
+        width: 20px;
+    }
+    .three2{
+        width: 25px;
+    }
+    .menu2:hover div{
+        background-color: rgb(192, 24, 24);
+        width: 30px;
+    }
+    #chk2:checked ~ .sidebar ul{
+        left: 0;
+    }
+
+.gulp{
+    display: flex;
+}
+.imagecon{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 200px;
+}
+.textcon{
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.img{
+    margin-left: 40px;
+    text-align: center;
+    background: rgba(231, 225, 225, 0.589);
+    height: 200px;
+    width: 200px;
+    margin-bottom: 40px;
+}
+#ip1{
+    margin-top: 40px;
+    width: 200px;
+}
+.img1{
+    text-align: center;
+    margin-left: 40px;
+    background: rgba(231, 225, 225, 0.589);
+    width: 450px;
+    height: 200px;
+    margin-bottom: 40px;
+}
+#ip2{
+    margin-top: 17px;
+    width: 180px;
+}
+#ip3{
+    margin-top: 40px;
+    margin-bottom: 10px;
+    width: 100px;
+}
+#ip4{
+    margin-top: 30px;
+    width: 250px;
+}
+#ip5{
+    margin-top: 30px;
+    width: 200px;
+}
+.img2{
+    text-align: center;
+    margin-left: 40px;
+    background: rgba(231, 225, 225, 0.589);
+    width: 450px;
+    height: 55%;
+}
+#ip6{
+    margin-top: 30px;
+    width: 500px;
+}
+#ip7{
+    margin-top: 6px;
+    width: 250px;
+}
+.img4{
+    margin-left: 40px;
+    text-align: center;
+    background: rgba(231, 225, 225, 0.589);
+    height: 200px;
+    width: 200px;
+    margin-bottom: 40px;
+}
+.ni{
+    display: flex;
+}
+button{
+    margin-top: 20px;
+    margin-left: 20%;
+    padding: 10px 50px;
+    background: none;
+    border: 1px solid grey;
+}
+.g{
+    margin-top: 30px;
+    background: rgb(1, 1, 8);
+    padding: 40px;
+}
+.bh{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+}
+.n1{
+    width: 40%;
+}
+.n1 h1{
+    color: white;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.n1 button{
+    text-transform: uppercase;
+    background: none;
+    color: white;
+    padding: 10px 70px;
+    margin-right: 25px;
+    margin-bottom: 20px;
+}
+.n1 button:hover{
+    background: rgb(189, 93, 93);
+ }
+.n1 select{
+    margin-top: 20px;
+    background: none;
+    color: white;
+    border-style: none;
+    width: 200px;
+}
+.n1 option{
+    color: black;
+}
+.n2{
+    display: flex;
+}
+.n2 h1{
+    color: white;
+    margin-bottom: 15px;
+}
+.n2 li{
+    margin-bottom: 10px;
+}
+.sel2{
+    display: flex;
+    flex-direction: column;
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+}
+.foot img{
+    width: 90px;
+}
+.fab{
+    margin-right: 10px;
+    margin-top: 40px;
+    color: white;
+}
+.n2 li a{
+    margin-right: 30px;
+    text-decoration: none;
+    padding-right: 20px;
+    color: white;
+}
+@media screen and (max-width: 600px){
+    .g{
+        padding: 10px;
+    }
+    .n1{
+        text-align: center;
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .n1 h1{
+        font-size: 30px;
+    }
+    .sel{
+        flex-direction: unset;
+        justify-content: space-evenly;
+    }
+    .n1 select{
+    width: 150px;
+    }
+    .n2{
+        flex-direction: column;
+    }
+    .n2 ul{
+        margin-bottom: 20px;
+    }
+    .img1, .img, .img2, .img4, #ip1, #ip2, #ip3,  #ip5, #ip6, #ip7 {
+        width: 100%; 
+        height: 200px;
+        background: none;
+    }
+    .img, .img2{
+        margin-bottom: 50px;
+    }
+    #ip4{
+        width: 150%;
+        height: 200px;
+    }
+    .ni{
+        display: unset;
+    }
+    button{
+        margin-top: 40px;
+    }
+
+}
